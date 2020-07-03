@@ -1,8 +1,9 @@
  
 /* start css.sty */
 .cmtt-10{font-family: monospace;}
-.cmti-10{ font-style: italic;}
 .cmbx-10{ font-weight: bold;}
+.cmr-9{font-size:90%;}
+.cmti-10{ font-style: italic;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
@@ -146,17 +147,17 @@ div.array {text-align:center;}
 dt.printshorthands{float:left; clear:left; margin-right:1em;}
 dd.thebibliography {margin-left: 2.5em;}
 dt.thebibliography {float:left; clear:left; margin-right:1em;}
-tr#TBL-28-1- td{border-bottom:0.112em solid}
-tr#TBL-28-5- td{border-bottom:0.112em solid}
-tr#TBL-29-1- td{border-bottom:0.112em solid}
-tr#TBL-29-5- td{border-bottom:0.112em solid}
-tr#TBL-30-1- td{border-bottom:0.112em solid}
-tr#TBL-30-5- td{border-bottom:0.112em solid}
 tr#TBL-31-1- td{border-bottom:0.112em solid}
 tr#TBL-31-5- td{border-bottom:0.112em solid}
 tr#TBL-32-1- td{border-bottom:0.112em solid}
 tr#TBL-32-5- td{border-bottom:0.112em solid}
 tr#TBL-33-1- td{border-bottom:0.112em solid}
 tr#TBL-33-5- td{border-bottom:0.112em solid}
+tr#TBL-34-1- td{border-bottom:0.112em solid}
+tr#TBL-34-5- td{border-bottom:0.112em solid}
+tr#TBL-35-1- td{border-bottom:0.112em solid}
+tr#TBL-35-5- td{border-bottom:0.112em solid}
+tr#TBL-36-1- td{border-bottom:0.112em solid}
+tr#TBL-36-5- td{border-bottom:0.112em solid}
 /* end css.sty */
 
