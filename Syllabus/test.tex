@@ -1,0 +1,742 @@
+\documentclass[10pt,letter,english]{article}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+
+
+\usepackage{tabularx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex} % Bib manager
+\DeclareFieldFormat*{howpublished}{\url{#1}} %Wrap howpublished field from .bib with url
+\DeclareFieldFormat*{note}{\url{#1}} %Wrap howpublished field from .bib with url
+\letbibmacro{urlBAK}{url}
+\renewbibmacro{url}{\iffieldundef{doi}{\usebibmacro{urlBAK}}{}}
+\addbibresource{references/motion.bib}
+
+% \usepackage{libertinus} % Use the Libertinus font
+% \renewcommand*\familydefault{\sfdefault} 
+\usepackage{etoolbox}
+
+\makeatletter
+\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{-10\p@}}}{}{}
+\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-10\p@}}}{}{}
+\pretocmd{\subsection}{\addtocontents{toc}{\protect\addvspace{-10\p@}}}{}{}
+\pretocmd{\subsubsection}{\addtocontents{toc}{\protect\addvspace{-10\p@}}}{}{}
+\makeatother
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\hyphenpenalty=10000
+\sloppy
+
+\def\contentsname{Outline}
+
+
+\begin{document}
+
+\hypertarget{desma-24-motion}{%
+      \section*{DESMA 24: Motion}\label{desma-24-motion}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      \textbf{DESMA 24}      & Summer 2020 --- Session C                                          \\
+      \textbf{Hours:}        & Mon/Wed 9:00--12:45am                                              \\
+      \textbf{Location:}     & Zoom Link TBA                                                      \\
+      \textbf{Instructors:}  & Hirad Sab --- \href{mailto:hiradsab@ucla.edu}{{hiradsab@ucla.edu}} \\
+                             & Dalena Tran --- \href{mailto:dalena@ucla.edu}{{dalena@ucla.edu}}   \\
+      \textbf{Office Hours:} & Monday and Wednesday 1-3pm, Zoom Link TBA
+\end{tabularx}
+
+Students develop and produce intermedia works. Musical and visual approaches to the conceptualization and shaping of time-based art. Exploration of sound and image relationships. Discussion of a wide spectrum of audiovisual practices including experimental animation, video art, dance, performance, non-narrative forms, interactive art and installation art.
+
+      {\small \tableofcontents}
+
+\textbf{Note: This syllabus was designed for in-person and on-campus teaching. As COVID-19 has changed the dynamics of our learning experience, this syllabus will be modified and adjusted to conform and address the needs of the class as we progress throughout the quarter.}
+
+\hypertarget{course-description}{%
+      \subsection{Course Description}\label{course-description}}
+
+This course is an introduction and integration of traditional design tools, camera, and digital technologies for application to multidisciplinary visual thinking, design, communication, and art. Throughout the quarter we will examine the language and histories of moving images and how artists have contributed to and utilized them in their work. We will explore, compare, and contrast \emph{industry-standard}/\emph{normative} approaches with \emph{radical}/\emph{experimental} takes of these various media. Our aim is to establish a rich understanding of the complex and evolving environment in which artists and designers have been creating moving image art. Students will explore technical, critical, and creative tools to realize moving-image projects and to gain a deeper understanding of moving images as a medium of expression and communication. In a series of mini-assignments and group projects students will explore and study the following:
+
+\begin{itemize}
+      \item
+            Principles of moving images: timing, perspective, change, and aesthetics.
+      \item
+            Fundamentals of motion and animation: attributes, keyframes, interpolation, and blending.
+      \item
+            The basics of digital moving images: codecs, resolution, raster/vector, and conversion.
+      \item
+            Means of exhibition and presentation: screening, immersive environment, web-based, and projection mapping.
+\end{itemize}
+
+We will explore the field through lectures, readings, screenings, discussions and student presentations. By the end of the quarter, students should have gained basic production and postproduction skills as well as a good understanding of the key concepts relevant to contemporary film, video, new media, installation and animation.
+
+\hypertarget{supplementary-material}{%
+      \subsection{Supplementary Material}\label{supplementary-material}}
+
+All supplementary materials will be provided through a dedicated Google Drive folder. This will be shared with everyone and includes our readings, video tutorials, guides, software, cheatsheets, and most importantly the required assets needed for class projects.
+
+\hypertarget{expectations}{%
+      \subsection{Expectations}\label{expectations}}
+
+\hypertarget{grading}{%
+      \subsubsection{Grading}\label{grading}}
+
+Grades will be determined according to the following breakdown:
+
+\begin{itemize}
+      \item
+            Project 1 10\%
+      \item
+            Project 2 10\%
+      \item
+            Project 3 10\%
+      \item
+            Final project 20\%
+      \item
+            Final project documentation 10\%
+      \item
+            Participation 20\%
+      \item
+            Minitasks 20\%
+\end{itemize}
+
+Project grades take into account conceptual, technical, and visual development as well as rigor and creativity. Outstanding or exceptional work will receive As, good work will receive Bs, sufficient work that does nothing more than meeting the requirements will receive Cs.
+
+\hypertarget{participation}{%
+      \subsubsection{Participation}\label{participation}}
+
+Participation is critical to passing and enjoying this class. Do the work, share your thoughts, ask questions, prepare for meetings, offer feedback during critiques. This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don't assume, ask. Remain open, be willing to take responsibility, apologize, and learn. Help each other in this. If you have concerns, please let us know.
+
+\hypertarget{attendance}{%
+      \subsubsection{Attendance}\label{attendance}}
+
+You get one unexcused absence, no questions asked. Each unexcused absence after that will result in one full letter grade deduction. Three unexcused absences will result in a failed grade in the class. If there is an emergency and you must miss class, email us before class. Absences will not be excused after the fact except in extreme circumstances. Illness requires a doctor's note. If you are more than 10 minutes late, you will be marked tardy. Three tardies result in one unexcused absence. Any disputes should be discussed with the us within two weeks.
+
+
+\hypertarget{commitment-to-diversity-and-safer-spaces}{%
+      \subsection{Commitment to Diversity and Safer
+            Spaces}\label{commitment-to-diversity-and-safer-spaces}}
+
+We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students and instructors is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructors. (\href{https://github.com/voidlab/diversity-statement}{{tx voidlab!}})
+
+\hypertarget{disability-services}{%
+      \subsection{Disability Services}\label{disability-services}}
+
+UCLA strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on a disability, please let me know as soon as possible. It is necessary for you to register with the \href{http://www.cae.ucla.edu/}{{UCLA Center for Accessible Education}} so that we can establish reasonable accommodations. After registration, make arrangements with me to discuss how to implement these accommodations.
+
+\hypertarget{land-acknowledgement}{%
+      \subsection{Land Acknowledgement}\label{land-acknowledgement}}
+
+The University of California, Los Angeles occupies the ancestral, traditional, and contemporary Lands of the Tongva and Chumash peoples. Our ability to gather and learn here is the result of coercion, dispossession, and colonization. We are grateful for the land itself and the people that have stewarded it through generations. While a land acknowledgement is not enough, it is the first step in the work toward supporting decolonial and indigenous movements for sovereignty and self-determination. \href{https://native-land.ca/}{{Read more about what land you're occupying.}}
+
+\clearpage
+
+\hypertarget{readings-discussions}{%
+      \subsection{Readings \& Discussions}\label{readings-discussions}}
+
+During the quarter, we will have five discussions on a variety of topics. With the exception of the first week, the readings for every week are divided into two topics (signified below with A and B). Each week you are required to read \emph{at least one article from each topic}. The readings are intended to familiarize you with some of the relevant discussions that relate to moving images. You are not required to write a written response. However every week we will discuss the readings with your peers. Your participation in these discussions will count towards your grade. It is highly recommended to take notes from the readings so that you can easily engage with the topic and the discussion. Since every student is only required to read one article (per topic), the discussions serve as a dialectical engagement to learn from one another and explore the readings in conversation. Moreover, the readings serve as a foundation for discussing the screenings, which are purposefully picked to convey some of the ideas from the readings in practice.
+
+\hypertarget{week-1-computational-cinema}{%
+      \subsubsection{Week 1: Computational
+            Cinema (Choose one)}\label{week-1-computational-cinema}}
+
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{manovichWhatDigitalCinema1995}            \\
+      -- & \fullcite{gurevitchCinemaDesignedVisual2016}        \\
+      -- & \fullcite{kittlerComputerGraphicsSemiTechnical2001} \\
+      -- & \fullcite{youngbloodComputerFilms2020}              \\
+\end{tabularx}
+
+\hypertarget{week-2a-the-temporal-image}{%
+      \subsubsection{Week 2A: The Temporal
+            Image (Choose one)}\label{week-2a-the-temporal-image}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{rombesNonlinear2017}             \\
+      -- & \fullcite{rombesTimeShifting2017}          \\
+      -- & \fullcite{rombesSimultaneousCinema2017}    \\
+      -- & \fullcite{muellerElementsPrinciples4D2016} \\
+\end{tabularx}
+
+\hypertarget{week-2b-database-cinema}{%
+      \subsubsection{Week 2B: Database Cinema (Choose one)}\label{week-2b-database-cinema}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{paglenInvisibleImagesYour2016}       \\
+      -- & \fullcite{wangPromiseDatabaseCinema2009}       \\
+      -- & \fullcite{teboWhatArchiveWhat2010}             \\
+      -- & \fullcite{gallowayDataDiariesIntroduction2002} \\
+      -- & \fullcite{lafranceWhenRobotsHallucinate2015}   \\
+\end{tabularx}
+
+\hypertarget{week-3a-image-translation}{%
+      \subsubsection{Week 3A: Image \&
+            Translation (Choose one)}\label{week-3a-image-translation}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{steyerlDefensePoorImage2012}       \\
+      -- & \fullcite{steyerlSpamEarthWithdrawal2012}    \\
+      -- & \fullcite{nathanMotionPictures2017}          \\
+      -- & \fullcite{alexanderRageMachineBuffering2017} \\
+      -- & \fullcite{jenkinsWhyMediaSpreads2013}        \\
+\end{tabularx}
+
+\hypertarget{week-3b-immersion-the-digital-exhibitory-complex}{%
+      \subsubsection{Week 3B: Immersion \& The Digital Exhibitory
+            Complex (Choose one)}\label{week-3b-immersion-the-digital-exhibitory-complex}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{barthesLeavingMovieTheater2016}           \\
+      -- & \fullcite{kabakovInstallation1999}                  \\
+      -- & \fullcite{manovichNotesInstagrammismMechanisms2016} \\
+      -- & \fullcite{friedbergWindowFrameScreen2006}           \\
+      -- & \fullcite{friedbergScreen2006}                      \\
+\end{tabularx}
+
+
+\hypertarget{week-4a-hyperreality}{%
+      \subsubsection{Week 4A: Hyperreality (Choose one)}\label{week-4a-hyperreality}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{thomsenParallaxView2016}             \\
+      -- & \fullcite{princeLookingGlassPhilosophical2010} \\
+      -- & \fullcite{sontagImageWorld2011}                \\
+      -- & \fullcite{claerboutSilenceLens2016}            \\
+\end{tabularx}
+
+
+\hypertarget{week-4b-weaponized-vision}{%
+      \subsubsection{Week 4B: Weaponized
+            Vision (Choose one)}\label{week-4b-weaponized-vision}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{steyerlFreeFallThought2012}           \\
+      -- & \fullcite{daneyImage1999a}                      \\
+      -- & \fullcite{virilioCinemaIsnSee1989}              \\
+      -- & \fullcite{chamayouSurveillanceAnnihilation2015} \\
+\end{tabularx}
+
+
+\hypertarget{week-5a-nonhuman-the-virtual-body}{%
+      \subsubsection{Week 5A: Nonhuman \& The Virtual
+            Body (Choose one)}\label{week-5a-nonhuman-the-virtual-body}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite{rombesVirtualHumanismPart2017}                 \\
+      -- & \fullcite{gonzalesAppendedSubjectRace2013}               \\
+      -- & \fullcite{rombesLookingYourselfLooking2017}              \\
+      -- & \fullcite{zylinskaPhotographyHuman2016}                  \\
+      -- & \fullcite{emmelhainzConditionsVisualityAnthropocene2015} \\
+\end{tabularx}
+
+
+\hypertarget{week-5b-post-aesthetics}{%
+      \subsubsection{Week 5B: Post-Aesthetics (Choose one)}\label{week-5b-post-aesthetics}}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+      -- & \fullcite[12-32]{menkmanGlitchMomentUm2011}    \\
+      -- & \fullcite{douglasItSupposedLook2014}           \\
+      -- & \fullcite{vierkantImageObjectPostInternet2010} \\
+      -- & \fullcite{cramerWhatPostdigital2015}           \\
+      -- & \fullcite{connorWhatPostinternetGot2013}       \\
+\end{tabularx}
+
+\clearpage
+\hypertarget{projects}{%
+      \subsection{Projects}\label{projects}}
+
+Projects are due at the start of class on the date assigned. Projects may be turned in up to one week late for a one letter grade deduction off the project grade. Work that is more than one week late will not be accepted. If you are absent, you are still expected to turn in projects online by the deadline. Extra time will not be given for work lost due to save issues, software errors, computer crash, etc. You should regularly backup your files on your desktop, online, and/or on an external harddrive or USB stick in case your computer is lost.
+
+\hypertarget{project-1}{%
+      \subsubsection{Project 1: Audio-Video}\label{project-1}}
+
+For this project we will be creating a moving image piece based on music. You are free to choose the sound, however keep in mind that your selected music should have the potential of being paired with video. The purpose of this project is to successfully elicit an emotional response in your viewers.
+
+\begin{itemize}
+      \item
+            Choose the music
+      \item
+            Describe and define the intended emotion you want to provoke
+      \item
+            Create a storyboard/outline/mindmap for a 1 minute moving image piece.
+      \item
+            Create and submit your piece.
+\end{itemize}
+
+\hypertarget{project-2}{%
+      \subsubsection{Project 2: Post-Instagram}\label{project-2}}
+
+This project is intended to spark a conversation around our over-reliance on social media and web-based platforms for the distribution of video and moving image content. The details of the project will be discussed during class.
+
+\hypertarget{final-project}{%
+      \subsubsection{Final Project: Open License}\label{final-project}}
+
+Your final project is an open investigation of your interests and the techniques learned throughout the course. As usual, it must be paired with audio and sound, which can be musical, ambient, environmental, or experimental. The required length of the project is 3 to 5 minutes. You are free to explore any topic that interests you. These can range from exploration of advanced and experimental techniques, software and frameworks that were not touched on in the class, social and political issues, personal and interpersonal investigations, investigations of aesthetics, etc. Collaboration, invention, and exploration are highly encouraged, as such you are free to join groups of 2-3 people for your final project. However, if you wish, you can work on the final project individually.
+
+\begin{itemize}
+      \item
+            Create a general idea based on your interests.
+      \item
+            Your project must synthesize the course materials and techniques.
+      \item
+            Your project must respond to some of the subjects discussed in the class.
+      \item
+            Your final projects will be exhibited online on a dedicated website.
+\end{itemize}
+
+
+\hypertarget{schedule}{%
+      \subsection{Schedule:}\label{schedule}}
+
+The schedule and program are tentative and subject to change. As the course moves forward based on your feedback and collective input we will attempt to modify the schedule as needed. However for the time being this is an outline of the quarter.
+
+\hypertarget{week-1-how-to-software}{%
+      \subsubsection{Week 1: How to Software}\label{week-1-how-to-software}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - August 3}}
+
+            \begin{itemize}
+                  \item
+                        Syllabus Overview (45 mins)
+                  \item
+                        Logistics \& Communication (30 mins)
+                  \item
+                        Introduction \& Discussion (30 mins)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 1a (1 hr 45 mins)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - August 5}}
+
+            \begin{itemize}
+                  \item
+                        Minitasks Presentation (30 mins)
+                  \item
+                        Screening \& Discussion (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Reading Discussion (30 mins)
+                  \item
+                        Workshop 1b (1 hr 30 mins)
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\subsubsection*{Minitask:}
+
+Create a 20 seconds video using Blender. Your task is to animate the location, rotation, or scale of a primitive object or an imported object. Using your video editing software of choice, add sound to this video. Upload your video to the DMA Cloud.
+
+\subsubsection*{Workshops:}
+This week we will explore the basics of navigation in Blender and Davinci Resolve. We will become familiar with the UI and the functionalities provided by these software. Furthermore we will explore the basics of animation, keyframing, rendering, and manipulating 3D and 2D images.
+
+\subsubsection*{Screenings:}
+
+\begin{itemize}
+      \item Computational Cinema \ref{week-1-computational-cinema}
+            \begin{itemize}
+                  \item
+                        Alan Warburton, Goodbye Uncanny Valley, 2017
+                  \item
+                        David O'Reilly, The External World, 2011
+                  \item
+                        Nikita Diakur, Ugly, 2017
+            \end{itemize}
+\end{itemize}
+
+\clearpage
+\hypertarget{week-2-content-and-time}{%
+      \subsubsection{Week 2: Content and Time}\label{week-2-content-and-time}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - August 10}}
+
+            \begin{itemize}
+                  \item
+                        Reading Discussion (30 mins)
+                  \item
+                        Workshop 2a (1 hr 30 mins)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Open Studio (1 hr 30 mins)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - August 12}}
+
+            \begin{itemize}
+                  \item
+                        Minitasks Presentation (30 mins)
+                  \item
+                        Screening \& Discussion (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 2b (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\hypertarget{minitask-1}{%
+      \subsubsection*{\texorpdfstring{Minitask:
+            }{Minitask: }}\label{minitask-1}}
+Create a 20 seconds video using Blender and found content. For this minitask you must combine both 2D and 3D elements and synchronize the animation with sound. 2D elements must have animated shapes, while 3D elements can be animated as you wish (geometry, material, etc.). Using Davinci Resolve you must composite the video. Take the time to explore the nodes in the Color panel of the software.
+
+\hypertarget{workshops-1}{%
+      \subsubsection*{Workshops:}\label{workshops-1}}
+We will dive deeper into animation, motion and change. We will explore the idea of attributes and properties, and what it means to animate them. We will also have an in-depth look at advanced techniques when dealing with 2D shapes in Blender.
+
+\hypertarget{screenings-1}{%
+      \subsubsection*{Screenings}\label{screenings-1}}
+
+\begin{itemize}
+      \item
+            The Temporal Image \ref{week-2a-the-temporal-image}
+
+            \begin{itemize}
+                  \item
+                        Christian Marclay, The Clock, 2010-11
+                  \item
+                        Joe Hamilton, Merge Nodes, 2016
+                  \item
+                        Ulf Langheinrich \& Kurt Hentschläger, MODELL 5, 1995
+            \end{itemize}
+      \item
+            Database Cinema \ref{week-2b-database-cinema}
+
+            \begin{itemize}
+                  \item
+                        Refik Anadol, WDCH DREAMS, 2018
+                  \item
+                        Jon Rafman, STILL LIFE (BETAMALE), 2013
+                  \item
+                        Joe Hamilton, Regular Division, 2016
+            \end{itemize}
+\end{itemize}
+
+\clearpage
+\hypertarget{week-3-encoding-and-post}{%
+      \subsubsection{Week 3: Encoding and Post}\label{week-3-encoding-and-post}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - August 17}}
+
+            \begin{itemize}
+                  \item
+                        \textbf{Project 1 Due}
+                  \item
+                        Reading Discussion (30 mins)
+                  \item
+                        Project 1 Critique (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 3a (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - August 19}}
+
+            \begin{itemize}
+                  \item
+                        Minitasks Presentation (30 mins)
+                  \item
+                        Screening \& Discussion (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 3b (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\hypertarget{minitask-2}{%
+      \subsubsection*{\texorpdfstring{Minitask:
+            }{Minitask: }}\label{minitask-2}}
+
+For this minitask we will get our hands dirty with conversion and encoding. You need to prepare a 15 seconds looping video from your Project 1 submission. We will convert this video using four different encoding settings:
+
+\begin{itemize}
+      \item
+            WebM VP9 with 2 MBit/s bit rate and transparency
+      \item
+            Two-pass H.264 with a restricted file size of 200 megabytes and 128k audio
+      \item
+            Gif with custom color palette, resized to half the size of original
+            footage, and with 15 fps
+      \item
+            ProRes 444 lossless
+\end{itemize}
+
+\hypertarget{workshops-2}{%
+      \subsubsection*{Workshops:}\label{workshops-2}}
+
+On Monday we will explore options for rendering and video encoding. We will have a look at specialized software for encoding and decoding videos, namely FFmpeg, Handbrake, Adobe Media Encoder, and Davinci Resolve' Render panel. We will explore where different codecs are useful and how some of the prominent ones came to be. We will also explore the composting options in Blender and Davinci Resolve and touch on some of the basic techniques used in compositing. On Wednesday, we are going to have a look at the basics of motion tracking, projection mapping, and immersive video installation. \textbf{Wednesday subject to change due to online teaching.}
+
+\subsubsection*{Screenings:}
+
+\begin{itemize}
+      \item
+            Image \& Translation \ref{week-3a-image-translation}
+
+            \begin{itemize}
+                  \item
+                        Alan Warburton, Spectacle, Speculation, Spam, 2017
+                  \item
+                        Lorna Mills, Ways of Something, 2014
+                  \item
+                        Takeshi Murata, Monster Movie, 2005
+            \end{itemize}
+      \item
+            Immersion \& The Digital Exhibitory Complex \ref{week-3b-immersion-the-digital-exhibitory-complex}
+
+            \begin{itemize}
+                  \item
+                        Alfredo Salazar-Caro, Dreams Of The Jaguar's Daughter, 2019
+                  \item
+                        Bruce Nauman, Live-Taped Video Corridor, 1970
+                  \item
+                        Laurie Anderson \& Hsin-Chien Huang, Chalkroom, 2017
+            \end{itemize}
+\end{itemize}
+
+\hypertarget{week-4-compositing-post-processing}{%
+      \subsubsection{Week 4: Compositing \&
+            Post-Processing}\label{week-4-compositing-post-processing}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - August 24}}
+
+            \begin{itemize}
+                  \item
+                        Reading Discussion (30 mins)
+                  \item
+                        Workshop 4a (1 hr 30 mins)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Open Studio (1 hr 30 mins)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - August 26}}
+
+            \begin{itemize}
+                  \item
+                        Minitasks Presentation (30 mins)
+                  \item
+                        Screening \& Discussion (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 4b (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\hypertarget{minitask-3}{%
+      \subsubsection*{\texorpdfstring{Minitask:
+            }{Minitask: }}\label{minitask-3}}
+
+Choose a short footage of your own or a readily available one. We will be using this for a quick motion tracking experiment. The length of the footage should not exceed 30 seconds. Augment this footage using the motion tracking techniques that we've learned in Blender. Apply post processing and composite in Davinci Resolve to seamlessly blend the added elements and the original footage.
+
+\hypertarget{workshops-3}{%
+      \subsubsection*{Workshops:}\label{workshops-3}}
+
+Much like the previous week, this week is dedicated to compositing and post processing. We will explore these ideas in much more depth. We will have our first look at Davinci Resolve's Fusion panel and learn about advanced file formats like OpenEXR.
+
+\subsubsection*{Screenings:}
+
+\begin{itemize}
+      \item
+            Hyperreality \ref{week-4a-hyperreality}
+
+            \begin{itemize}
+                  \item
+                        Frederik Heyman, Virtual Embalming, 2018
+                  \item
+                        Cécile B. Evans, Hyperlinks or It Didn't Happen, 2014
+                  \item
+                        Ed Atkins, Ribbons, 2014
+                  \item
+                        Kim Laughton, Parking, 2018
+                  \item
+                        John Gerrard. Sow Farm (near Libbey, Oklahoma), 2009
+            \end{itemize}
+      \item
+            Weaponized Vision \ref{week-4b-weaponized-vision}
+
+            \begin{itemize}
+                  \item
+                        Hito Steyerl, How Not to be Seen: A Fucking Didactic Educational .MOV File, 2013
+                  \item
+                        Harun Farocki, Serious Games (Excerpts), 2009-10
+                  \item
+                        Bruce Nauman, Video Surveillance Piece: Public Room, Private Room, 1969-70
+                  \item
+                        Omer Fast, 5,000 Feet is the Best, 2011
+            \end{itemize}
+\end{itemize}
+
+\clearpage
+\hypertarget{week-5-presentation-and-exhibition}{%
+      \subsubsection{Week 5: Presentation and
+            Exhibition}\label{week-5-presentation-and-exhibition}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - August 31}}
+
+            \begin{itemize}
+                  \item
+                        \textbf{Project 2 Due}
+                  \item
+                        Reading Discussion (30 mins)
+                  \item
+                        Project 2 Critique (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 5a (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - September 2}}
+
+            \begin{itemize}
+                  \item
+                        Minitasks Presentation (30 mins)
+                  \item
+                        Screening \& Discussion (1 hr)
+                  \item
+                        -\/-\/- Break (15 mins) -\/-\/-
+                  \item
+                        Workshop 5b (1 hr)
+                  \item
+                        Open Studio (1 hr)
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\hypertarget{minitask-4}{%
+      \subsubsection*{\texorpdfstring{Minitask:
+            }{Minitask: }}\label{minitask-4}}
+
+For this minitask you will present a preliminary version of your Final Project to the class.
+
+\hypertarget{workshops-4}{%
+      \subsubsection*{Workshops:}\label{workshops-4}}
+
+This week's workshops are aimed at executing a project from start to finish. We will begin by collecting content, and creating our assets. Then we will construct a scene in Blender using the animation technique that we've learned so far. We will also use some of our skills in motion tracking. The final scene will be rendered, converted, and projection mapped in class. \textbf{Subject to change due to online teaching.}
+
+\subsubsection*{Screenings:}
+
+\begin{itemize}
+      \item
+            Nonhuman \& The Virtual Body \ref{week-5a-nonhuman-the-virtual-body}
+
+            \begin{itemize}
+                  \item
+                        Darío Alva, still lost I guess, here's a tunnel\ldots, 2018
+                  \item
+                        Jacolby Satterwhite, Reifying Desire Three, 2012
+                  \item
+                        Jesse Kanda \& Arca, Fluid Silhouettes, 2014
+                  \item
+                        Jesse Kanda \& Arca, TRAUMA Scene 1, 2014
+                  \item
+                        Sam Rolfes, Render Bender EP1, 2019
+            \end{itemize}
+      \item
+            Post-Aesthetics \ref{week-5b-post-aesthetics}
+
+            \begin{itemize}
+                  \item
+                        Peter Burr, Drop City, 2019
+                  \item
+                        Theo Triantafyllidis, How To Everything, 2016
+                  \item
+                        AES+F, Allegoria Sacra, 2012
+                  \item
+                        Sara Ludy, Rainbow Glass, 2016
+                  \item
+                        Akihiko Taniguchi \& Holly Herndon, Chorus, 2014
+            \end{itemize}
+\end{itemize}
+
+
+\clearpage
+\hypertarget{week-6-the-end-is-nigh}{%
+      \subsubsection{Week 6: The End is Nigh}\label{week-6-the-end-is-nigh}}
+
+\begin{longtable}[]{@{}ll@{}}
+      \toprule
+      \endhead
+      \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Mon - September 7}}
+
+            \begin{itemize}
+                  \item
+                        Open Studio (All Day)
+            \end{itemize}\strut
+      \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+            \textbf{{Wed - September 9}}
+
+            \begin{itemize}
+                  \item
+                        \textbf{Final Project Due}
+                  \item
+                        Final Project Critique (2 hr 30 mins)
+                  \item
+                        Public Exhibition
+            \end{itemize}\strut
+      \end{minipage}\tabularnewline
+      \bottomrule
+\end{longtable}
+
+\end{document}
