@@ -1,0 +1,86 @@
+@font-face {
+    font-family: kaerukaeru;
+    src: url(../../fonts/kaerukaeru-Regular.woff);
+    }
+body {
+    padding: 0;
+    margin: 3em;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    line-height: 1.4em;
+    font-size: 1.15em;
+    color: #000;
+    /* background-image: linear-gradient(#ffeed5, #fff); */
+    min-height: 1600px;
+    /* background: #fff4e4; */
+
+}
+
+h1 {
+    /* margin: 1em 0 3em 0; */
+    /* padding: 0; */
+    padding-bottom: .25em;
+    font-family: kaerukaeru;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 9.75em;
+    text-align: center;
+}
+
+.container {
+    max-width: 1900px;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+  }
+  .col {
+    flex: 1;
+    flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+  }
+  .col:not(:last-child) {
+	margin-right: 25px;
+}
+  .one{
+      /* background: yellow; */
+      border: solid 1px #000;
+  }
+  .two{
+      /* background: cyan; */
+      border: solid 1px #000;
+  }
+  .three{
+      /* background: magenta; */
+      border: solid 1px #000;
+  }
+@media screen and (max-width: 800px) {
+    body {
+        margin: 2em;
+    }
+
+    h1 {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    .flex-grid {
+        display: block;
+      }
+
+}
+@media screen and (max-width: 1100px) {
+    body {
+        margin: 2em;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+
+}
+
