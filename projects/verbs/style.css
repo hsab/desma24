@@ -136,7 +136,10 @@ video:hover, img:hover {
     grid-column: 1;
     grid-row: 9;
 }
-
+.v14{
+    grid-column: 2;
+    grid-row: 10;
+}
 
 
 
