@@ -74,6 +74,7 @@ video, img{
     padding: 10px;
     box-shadow: 10px 12px #000;
     transition: 0.3s;
+    background: #fff;
 }
 
 
@@ -151,7 +152,14 @@ video:hover, img:hover {
     grid-column: 3;
     grid-row: 9;
 }
-
+.v15{
+    grid-column: 1;
+    grid-row: 10;
+}
+.v16{
+    grid-column: 3;
+    grid-row: 10;
+}
 
 
 
