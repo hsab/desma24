@@ -153,12 +153,20 @@ video:hover, img:hover {
     grid-row: 9;
 }
 .v15{
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 10;
 }
 .v16{
+    grid-column: 1;
+    grid-row: 11;
+}
+.v17{
     grid-column: 3;
-    grid-row: 10;
+    grid-row: 11;
+}
+.v18{
+    grid-column: 2;
+    grid-row: 12;
 }
 
 
