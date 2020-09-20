@@ -136,11 +136,6 @@ video, img{
     background: #fff;
 }
 
-
-/* video:nth-of-type(1):hover {
-    box-shadow: 10px 12px purple;
-} */
-
 video:hover, img:hover {
     /* box-shadow: 10px 12px magenta; */
     cursor: pointer;
