@@ -46,6 +46,12 @@ a:hover,
     color: #f56410;
     cursor: pointer;
 }
+.headingText {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
 .logo h2{
     /* margin: 1em 0 3em 0; */
     padding: 0;
@@ -69,8 +75,8 @@ h4{
     font-size: 1em;
     line-height: 1.2em;
     /* margin:0; */
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
+    margin-top: 0px;
 }
 
 p{
@@ -108,7 +114,71 @@ video{
     max-width: 800px;
 
 }
+.headLink {
+    border: none;
+}
 
+.headLink:hover {
+    border: none;
+}
+
+.letter:hover {
+    fill: #f5641049;
+}
+
+svg {
+    display: flex;
+    font: .5em 'Source Sans Pro';
+    max-width: 1700px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+text {
+    letter-spacing: 5px;
+}
+
+.letter {
+    fill: rgba(255, 255, 255, 0.246);
+    stroke: #f56410;
+    stroke-dasharray: 6% 29%;
+    stroke-width: .02em;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 13s infinite linear;
+    transition: fill 0.5s ease-in-out;
+}
+
+.letter:nth-child(1) {
+    stroke: #f3b328;
+    animation-delay: -1;
+}
+
+.letter:nth-child(2) {
+    stroke: #f56410;
+    animation-delay: -2s;
+}
+
+.letter:nth-child(3) {
+    stroke: #f3b328;
+    animation-delay: -3s;
+}
+
+.letter:nth-child(4) {
+    stroke: #f56410;
+    animation-delay: -4s;
+}
+
+.letter:nth-child(5) {
+    stroke: #f3b328;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
 
 @media screen and (max-width: 800px) {
     body {
