@@ -11,6 +11,7 @@ body {
     font-size: 1.15em;
     color: #000;
     background-image: linear-gradient(#ffeed5, #fff);
+    background-repeat: no-repeat;
     min-height: 1600px;
     /* background: #fff4e4; */
     text-align:center;
@@ -101,7 +102,14 @@ p{
     flex-direction: column;
     justify-content: center;
 }
-
+.vidInfoCont {
+    display: flex;
+    justify-content: center;
+}
+.vidInfo {
+    max-width: 600px;
+    text-align: left;
+}
 video{
     margin-top:5vh;
     border: 1px solid;

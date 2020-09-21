@@ -10,7 +10,9 @@ body {
     line-height: 1.4em;
     font-size: 1.15em;
     color: #000;
-    /* background-image: linear-gradient(#ffeed5, #fff); */
+    background-color: #ffeed5;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 1600px;
     /* background: #fff4e4; */
 
@@ -37,6 +39,24 @@ h1 {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: .1em;
+}
+a,
+.button {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: .1em;
+    border-bottom: 1.75px solid #f3b328;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    /* background: yellow; */
+}
+
+a:hover,
+.button:hover {
+    border-bottom: 1.75px solid #f3b328;
+    color: #f56410;
+    cursor: pointer;
 }
 
 h3{
